@@ -1,0 +1,11 @@
+s=input("enter the word:")
+t=input("enter another word:")
+def isIco(s,t):
+    if (len(s)!=len(t)):
+        return False
+    for i in range(len(s)):
+        count=0
+        if(s.count(s[i])!=t.count(t[i])):
+            return False
+    return True
+print(isIco(s,t))
